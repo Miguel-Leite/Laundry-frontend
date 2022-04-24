@@ -1,0 +1,8 @@
+.navbar .navbar-brand {
+    color: var(--light-ws) !important;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand  img {
+    width: 120px;
+}

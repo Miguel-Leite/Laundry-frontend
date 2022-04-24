@@ -4,13 +4,7 @@ import {
     NavDropdown,
     Container
 } from 'react-bootstrap';
-
-// import {
-//     MdMenu,
-//     MdEmail,
-//     MdBusAlert,
-//     MdViewArray
-// } from 'react-icons/md'
+import logo from '../../assets/logo.png';
 import './index.css';
 
 export function NavMenu() {
@@ -18,7 +12,10 @@ export function NavMenu() {
         <>
             <Navbar expand="lg" className='navbar-dark'>
                 <Container>
-                    <Navbar.Brand href="#">Laundry</Navbar.Brand>
+                    <Navbar.Brand href="#">
+                        {/* Laundry */}
+                        <img src={logo} />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">

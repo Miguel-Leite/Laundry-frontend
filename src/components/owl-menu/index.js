@@ -10,13 +10,27 @@ import { NavLink } from 'react-router-dom';
 export function OwlMenu() {
     return (
         <>
-
-            <ReactOwlCarousel className='owl-theme' items={4}  loop nav margin={3}>
+            <ReactOwlCarousel className='owl-theme'  items={4}  loop nav={false} margin={10} responsive={
+              {
+                300:{
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                  items: 2,
+                  nav: false,
+                },
+                1000: {
+                  items: 4,
+                  nav: false
+                }
+            }
+              }>
               <OwlItem>
                   <Text>
                     <h4>Usuarios</h4>
                     <p>Total de usuarios: 32</p> 
-                    <NavLink to='/'>Acessar</NavLink>
+                    <NavLink to='/user/create'>Acessar</NavLink>
                   </Text>
                   <Icon>
                     <IoPerson />

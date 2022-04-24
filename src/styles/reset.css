@@ -7,6 +7,11 @@
     --icon-ws: rgba(189, 231, 255, 0.651);
     --border-ws: #015a8d;
     --darklight-ws:rgba(0, 0, 0, 0.075);
+
+    --form-ws: #f7f7f7;
+    --label-login-ws: #cacaca;
+    --input-login-ws: #ebebeb;
+    --button-login-ws: #4277e9;
 }
 
 
@@ -48,7 +53,9 @@ body {
     color: var(--dark-ws) !important;
 }
 
-.navbar .navbar-brand {
-    color: var(--light-ws) !important;
-    font-weight: bold;
+.owl-dots {
+    height: 15px;
+    width: 45px;
+    border: 2px solid red !important;
+    position: absolute;
 }

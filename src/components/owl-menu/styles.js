@@ -3,11 +3,14 @@ import styled from 'styled-components';
 export const OwlItem = styled.div`
     border: 3px solid var(--light-ws);
     padding: 25px 20px;
+    width: 100%;
+    height:auto;
     border-radius: 6px;
     background-color: var(--primary-ws);
     color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     transition: background-color .2s ease;  
     &:hover {
         border: 3px solid var(--light-ws);
@@ -15,6 +18,11 @@ export const OwlItem = styled.div`
         a {
            color: var(--white-ws); 
         }
+    }
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+        
     }
 `;
 
