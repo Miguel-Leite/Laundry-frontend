@@ -40,8 +40,16 @@ export const Text = styled.div`
 `;
 
 export const Icon = styled.div`
+    padding: 5px;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--border-ws);
     svg {
-        font-size: 52px;
+        font-size: 28px;
         color: var(--icon-ws)
     }
 `;

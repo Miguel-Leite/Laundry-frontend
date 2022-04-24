@@ -6,7 +6,7 @@ import {
     Button,
     NavDropdown,
     Container
-} from 'react-bootstrap'
+} from 'react-bootstrap';
 
 // import {
 //     MdMenu,
@@ -19,7 +19,7 @@ import './index.css';
 export function NavMenu() {
     return (
         <>
-            <Navbar expand="lg">
+            <Navbar expand="lg" className='navbar-dark'>
                 <Container>
                     <Navbar.Brand href="#">Laundry</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

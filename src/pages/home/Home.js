@@ -1,12 +1,11 @@
-import { NavMenu } from '../components/navMenu';
-import { OwlMenu } from '../components/owl-menu';
+import { OwlMenu } from '../../components/owl-menu';
+import { TableUser } from '../../components/tableUser';
+import { Wrapper } from '../../components/Wrapper';
 
 export function Home() {
   return (
     <div>
-      <div className='wrapper'>
-        <NavMenu />
-      </div>
+      <Wrapper />
       <div className='container'>
         <div className="wrapper-content">
           <div className='container'>

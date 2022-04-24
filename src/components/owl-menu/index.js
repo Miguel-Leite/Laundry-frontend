@@ -11,7 +11,7 @@ export function OwlMenu() {
     return (
         <>
 
-            <ReactOwlCarousel className='owl-theme' items={3}  loop nav margin={3}>
+            <ReactOwlCarousel className='owl-theme' items={4}  loop nav margin={3}>
               <OwlItem>
                   <Text>
                     <h4>Usuarios</h4>

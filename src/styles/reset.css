@@ -1,5 +1,6 @@
 :root {
     --primary-ws: #003757;
+    --secundary-ws: rgba(189, 231, 255, 0.651);
     --light-ws: #d6d6d6;
     --white-ws: #fefefe;
     --dark-ws: #333333;
@@ -35,6 +36,7 @@ body {
     background-color: var(--white-ws);
     color: var(--white-ws);
     margin-top: -50px;
+    margin-bottom: 20px;
     padding: 50px 0px;
     border-radius: 8px;
     box-shadow: 0px 0px 25px var(--darklight-ws);    
@@ -49,12 +51,4 @@ body {
 .navbar .navbar-brand {
     color: var(--light-ws) !important;
     font-weight: bold;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
-    color: var(--light-ws) !important;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--white-ws) !important;
 }
