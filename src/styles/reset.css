@@ -45,6 +45,7 @@ body {
     padding: 50px 0px;
     border-radius: 8px;
     box-shadow: 0px 0px 25px var(--darklight-ws);    
+    z-index: 1;
 }
 
 .owl-theme {
@@ -58,4 +59,21 @@ body {
     width: 45px;
     border: 2px solid red !important;
     position: absolute;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    display: none !important;
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: block !important;
+    /* display: flex !important; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    width: 26px;
+    height: 26px;
+    background-color: var(--primary-ws) !important;
+    color: var(--white-ws) !important;
+    font-weight: 800;
 }

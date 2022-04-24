@@ -6,3 +6,7 @@
 .navbar .navbar-brand  img {
     width: 120px;
 }
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    z-index: 999 !important;
+}

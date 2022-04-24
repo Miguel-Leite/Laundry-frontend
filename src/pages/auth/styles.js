@@ -24,7 +24,7 @@ export const FormAuth = styled.div`
                 background-color: var(--input-login-ws);
                 border: none !important;
                 border-bottom: 1px solid transparent !important;
-                color: var(--light-ws) !important;
+                color: var(--dark-ws) !important;
                 transition: border .2s ease;
                 border-radius: 0 !important;
                 &:focus {
@@ -40,7 +40,7 @@ export const FormAuth = styled.div`
         button {
             width: 100%;
             background-color: var(--button-login-ws);
-            color: var(--light-ws);
+            color: var(--white-ws);
             transition: filter .2s ease;
             &:hover {
                 color: var(--light-ws);
