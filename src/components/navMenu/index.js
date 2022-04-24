@@ -1,9 +1,6 @@
 import {
     Navbar,
     Nav,
-    Form,
-    FormControl,
-    Button,
     NavDropdown,
     Container
 } from 'react-bootstrap';

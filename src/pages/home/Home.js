@@ -1,5 +1,5 @@
 import { OwlMenu } from '../../components/owl-menu';
-import { TableUser } from '../../components/tableUser';
+// import { TableUser } from '../../components/tableUser';
 import { Wrapper } from '../../components/Wrapper';
 
 export function Home() {
