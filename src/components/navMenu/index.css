@@ -10,3 +10,9 @@
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     z-index: 999 !important;
 }
+
+@media (max-width: 1000px) {
+    .navbar-nav .dropdown-menu {
+        position: relative;
+    }
+}

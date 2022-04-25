@@ -4,6 +4,7 @@ import {
     NavDropdown,
     Container
 } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import './index.css';
 
@@ -12,10 +13,9 @@ export function NavMenu() {
         <>
             <Navbar expand="lg" className='navbar-dark'>
                 <Container>
-                    <Navbar.Brand href="#">
-                        {/* Laundry */}
+                    <NavLink className='navbar-brand' to='/'>
                         <img src={logo} />
-                    </Navbar.Brand>
+                    </NavLink>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
