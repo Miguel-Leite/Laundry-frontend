@@ -30,7 +30,7 @@ export function OwlMenu() {
                   <Text>
                     <h4>Usuarios</h4>
                     <p>Total de usuarios: 32</p> 
-                    <NavLink to='/user/create'>Acessar</NavLink>
+                    <NavLink to='/user'>Acessar</NavLink>
                   </Text>
                   <Icon>
                     <IoPerson />

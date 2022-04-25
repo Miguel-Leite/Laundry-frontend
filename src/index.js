@@ -11,7 +11,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Home } from './pages/home/Home';
-import { UserCreate } from './pages/user/UserCreate';
+import { User } from './pages/user/User';
 import { Auth } from './pages/auth/auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +20,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='user' element={<UserCreate />} />
+        <Route path='user' element={<User />} />
         <Route path='login' element={<Auth />} />
       </Routes>
     </BrowserRouter>
