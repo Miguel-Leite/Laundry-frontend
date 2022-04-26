@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-export const FormAuth = styled.div`
+export const FormAuth = styled.section`
     width: 100%;
-    height:100%;
-    max-height: 100vh;
+    height:100vh;
     position: relative;
-    diplay: flex;
+    display: flex;
 
     .imgBx {
         position: relative;
@@ -89,9 +88,9 @@ export const FormAuth = styled.div`
                 }
 
                 p {
-                    color: var(--border-ws);
+                    color: var(--dark-ws);
                     a {
-                        color: var(--icon-ws);
+                        color: var(--border-ws);
                     }
                 }
             }

@@ -1,37 +1,35 @@
 import { 
-    FormAuth,
-    Logo
-} from './styles'
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+    FormAuth
+} from './styles';
 
-import img from '../../assets/auth.jpg';
+import Image from '../../assets/offers4.png';
 
 export function Auth () {
     return (
         <>
-            <FormAuth>
+            <FormAuth t='owl'>
                 <div className='imgBx'>
-                    <img src={img} alt='Image Sign In' />
+                    <img src={Image} alt='Image Sign In' />
                 </div>
                 <div className='contentBx'>
-                    <h2>Login</h2>
-                    <form>
+                    <form className='formBx'>
+                        <h2>Entrar</h2>
                         <div className='inputBx'>
-                            <span>Username</span>
+                            <span>E-mail</span>
                             <input type='text' />
                         </div>
                         <div className='inputBx'>
-                            <span>Password</span>
+                            <span>Senha</span>
                             <input type='text' />
                         </div>
                         <div className='remember'>
-                            <label><input type='checkbox' /> Remember me</label>
+                            <label><input type='checkbox' /> Lembra-me neste despositivo</label>
                         </div>
                         <div className='inputBx'>
-                            <input type='submit' value='Sign In' />
+                            <input type='submit' value='Entrar' />
                         </div>
                         <div className='inputBx'>
-                            <p>Don't have an account? <a href='#'>Sign Up</a> </p>
+                            <p>Esqueceste a sua senha? <a href='#'>Clique aqui</a> </p>
                         </div>
                     </form>
                 </div>
