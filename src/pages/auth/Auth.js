@@ -4,37 +4,37 @@ import {
 } from './styles'
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
-import logo from '../../assets/logo.png';
+import img from '../../assets/auth.jpg';
 
 export function Auth () {
     return (
         <>
             <FormAuth>
-                <Container>
-                    <Row className="justify-content-md-center">
-                        <Col md={5}>
-                            <Logo>
-                                <img src={logo} />
-                            </Logo>
-                            <Container>
-                                <Form>
-                                    <Form.Group controlId="formBasicEmail">
-                                        <Form.Label>Email</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter email" />
-                                    </Form.Group>
-
-                                    <Form.Group controlId="formBasicPassword">
-                                        <Form.Label>Password</Form.Label>
-                                        <Form.Control type="password" placeholder="Password" />
-                                    </Form.Group>
-                                    <Button variant="" type="submit">
-                                        Entrar
-                                    </Button>
-                                </Form>
-                            </Container>
-                        </Col>
-                    </Row>
-                </Container>
+                <div className='imgBx'>
+                    <img src={img} alt='Image Sign In' />
+                </div>
+                <div className='contentBx'>
+                    <h2>Login</h2>
+                    <form>
+                        <div className='inputBx'>
+                            <span>Username</span>
+                            <input type='text' />
+                        </div>
+                        <div className='inputBx'>
+                            <span>Password</span>
+                            <input type='text' />
+                        </div>
+                        <div className='remember'>
+                            <label><input type='checkbox' /> Remember me</label>
+                        </div>
+                        <div className='inputBx'>
+                            <input type='submit' value='Sign In' />
+                        </div>
+                        <div className='inputBx'>
+                            <p>Don't have an account? <a href='#'>Sign Up</a> </p>
+                        </div>
+                    </form>
+                </div>
             </FormAuth>
         </>
     )

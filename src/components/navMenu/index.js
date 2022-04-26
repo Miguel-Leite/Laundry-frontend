@@ -14,7 +14,7 @@ export function NavMenu() {
             <Navbar expand="lg" className='navbar-dark'>
                 <Container>
                     <NavLink className='navbar-brand' to='/'>
-                        <img src={logo} />
+                        <img src={logo} alt='Logo System'/>
                     </NavLink>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
