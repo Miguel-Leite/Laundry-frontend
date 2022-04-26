@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { TableUser } from '../../components/tableUser';
 import { Wrapper } from '../../components/Wrapper';
 import { BlocTabs, ContentTabs } from './styles';
 
@@ -22,7 +23,7 @@ export const User = () => {
                         </BlocTabs>
                         <ContentTabs>
                             <div className={toggleState === 1? 'tab active-tab' : 'tab'}>
-                                <h1>Tab 1</h1>
+                                <TableUser/>
                             </div>
                             <div className={toggleState === 2? 'tab active-tab' : 'tab'}>
                                 <h1>Tab 2</h1>

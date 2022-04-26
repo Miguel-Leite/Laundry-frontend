@@ -1,37 +1,51 @@
-import { Table } from 'react-bootstrap';
-import './style.css';
-
+import { Table, Thead, Tbody } from './styles';
+import { AiOutlineEdit, AiOutlineDelete } from 'react-icons/ai';
 export function TableUser () {
     return (
         <>
-            <Table striped  hover className='my-5'>
-                <thead>
+            <Table>
+                <Thead>
                     <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Contacto</th>
+                        <th>Status</th>
+                        <th></th>
                     </tr>
-                </thead>
-                <tbody>
+                </Thead>
+                <Tbody>
                     <tr>
                         <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>Miguel</td>
+                        <td>miguelleite200leite@gmail.com</td>
+                        <td>+244941398739</td>
+                        <td><p className='status status-success'>Ativo</p></td>
+                        <td>
+                            <button className='btn btn-info'>
+                                <AiOutlineEdit color='white' />
+                            </button>
+                            <button className='btn btn-danger'>
+                                <AiOutlineDelete color='white' />
+                            </button>
+                        </td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>Miguel Leite</td>
+                        <td>miguelleite200leite@gmail.com</td>
+                        <td>+244941398739</td>
+                        <td><p className='status status-danger'>Inativo</p></td>
+                        <td>
+                            <button className='btn btn-info'>
+                                <AiOutlineEdit color='white' />
+                            </button>
+                            <button className='btn btn-danger'>
+                                <AiOutlineDelete color='white' />
+                            </button>
+                        </td>
                     </tr>
-                    <tr>
-                    <td>3</td>
-                    <td colSpan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
-                </tbody>
+                </Tbody>
             </Table>
         </>
     )
