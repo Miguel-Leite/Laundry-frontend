@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Home } from './pages/home/Home';
 import { User } from './pages/user/User';
-import { Auth } from './pages/auth/auth';
+import { Auth } from './pages/auth/Auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
