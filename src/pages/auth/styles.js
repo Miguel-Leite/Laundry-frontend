@@ -47,7 +47,7 @@ export const FormAuth = styled.section`
                 font-size: 1.5em;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-                border-bottom: 4px solid var(--border-ws);
+                border-bottom: 2px solid var(--border-ws);
                 display: inline-block;
                 letter-spacing: 1px;
             }
